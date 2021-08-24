@@ -1,0 +1,77 @@
+.em-footer{
+  &--container{
+    background-color: #072D34 !important;
+    padding: 2rem 0 0 0;
+    h5, p {
+      color: #ffffff !important;
+    } 
+  }
+
+  &--inner,
+  &--terms{
+    width: 100%;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+
+    @include min-screen(768px){
+      max-width: 1400px !important;
+    }
+  }
+
+  &--row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem .8rem;
+
+    @include min-screen(768px){
+      flex-direction: row;
+    }
+  }
+
+  &--signup form{
+    display: flex;
+    flex-direction: column;
+
+    @include min-screen(768px){
+      flex-direction: row;
+    }
+
+    & > input[type=email]{
+      color: #ffffff;
+      background-color: #072D34;
+      border-color: #ffffff;
+      border-radius: 10px;
+      margin-bottom: 10px;
+
+      @include min-screen(768px){
+        margin-right: 10px;
+        margin-bottom: unset;
+      }
+    }
+
+    & > [type=submit]{
+      color: #ffffff;
+      background-color: #F58B71;
+      border-radius: 10px;
+      border: none;
+    }
+  }
+
+  &--row2{
+    border-top: 1px solid #ffffff;
+
+    & > div{
+      display: flex;
+      flex-direction: column;
+      padding: 2rem .8rem;
+
+      @include min-screen(768px){
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+
