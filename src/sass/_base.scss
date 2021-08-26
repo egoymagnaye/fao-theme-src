@@ -1,0 +1,18 @@
+$font-alegreya-bold: "AlegreyaBold";
+$font-opensans-bold: "MontserratBold";
+$font-opensans-light: "MontserratLight";
+
+$color-black: #000;
+$color-white: #fff;
+$color-light-orange: #edb462;
+$color-orange: #f58b71;
+$color-green: #14606e;
+$color-gray: #6e7082;
+
+/* Custom Resets */
+input[type="submit"] {
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}

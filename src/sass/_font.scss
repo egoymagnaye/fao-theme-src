@@ -1,26 +1,61 @@
-/* @font-face {
-  font-family: "CormorantGaramond";
-  src: url("../fonts/cormomantgaramond/CormorantGaramond-Bold.eot");
-  src: url("../fonts/cormomantgaramond/CormorantGaramond-Bold.eot?#iefix")
+@font-face {
+  font-family: $font-alegreya-bold;
+  src: url("../fonts/alegreya-bold/AlegreyaBold.eot");
+  src: url("../fonts/alegreya-bold/AlegreyaBold.eot")
       format("embedded-opentype"),
-    url("../fonts/cormomantgaramond/CormorantGaramond-Bold.woff2")
-      format("woff2"),
-    url("../fonts/cormomantgaramond/CormorantGaramond-Bold.woff") format("woff"),
-    url("../fonts/cormomantgaramond/CormorantGaramond-Bold.ttf")
-      format("truetype"),
-    url("../fonts/cormomantgaramond/CormorantGaramond-Bold.svg#CormorantGaramond-Bold")
-      format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    url("../fonts/alegreya-bold/AlegreyaBold.woff2") format("woff2"),
+    url("../fonts/alegreya-bold/AlegreyaBold.woff") format("woff"),
+    url("../fonts/alegreya-bold/AlegreyaBold.ttf") format("truetype"),
+    url("../fonts/alegreya-bold/AlegreyaBold.svg#AlegreyaBold") format("svg");
 }
 
 @font-face {
-  font-family: "OpenSansLight";
-  src: url("../fonts/opensans/OpenSansLight.eot");
-  src: url("../fonts/opensans/OpenSansLight.eot") format("embedded-opentype"),
-    url("../fonts/opensans/OpenSansLight.woff2") format("woff2"),
-    url("../fonts/opensans/OpenSansLight.woff") format("woff"),
-    url("../fonts/opensans/OpenSansLight.ttf") format("truetype"),
-    url("../fonts/opensans/OpenSansLight.svg#OpenSansLight") format("svg");
-} */
+  font-family: $font-opensans-bold;
+  src: url("../fonts/montserrat-bold/MontserratBold.eot");
+  src: url("../fonts/montserrat-bold/MontserratBold.eot")
+      format("embedded-opentype"),
+    url("../fonts/montserrat-bold/MontserratBold.woff2") format("woff2"),
+    url("../fonts/montserrat-bold/MontserratBold.woff") format("woff"),
+    url("../fonts/montserrat-bold/MontserratBold.ttf") format("truetype"),
+    url("../fonts/montserrat-bold/MontserratBold.svg#MontserratBold")
+      format("svg");
+}
+
+@font-face {
+  font-family: $font-opensans-light;
+  src: url("../fonts/montserrat-light/MontserratLight.eot");
+  src: url("../fonts/montserrat-light/MontserratLight.eot")
+      format("embedded-opentype"),
+    url("../fonts/montserrat-light/MontserratLight.woff2") format("woff2"),
+    url("../fonts/montserrat-light/MontserratLight.woff") format("woff"),
+    url("../fonts/montserrat-light/MontserratLight.ttf") format("truetype"),
+    url("../fonts/montserrat-light/MontserratLight.svg#MontserratLight")
+      format("svg");
+}
+
+body {
+  p,
+  li,
+  a,
+  input {
+    font-family: $font-opensans-light;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-alegreya-bold;
+
+    a {
+      font-family: $font-alegreya-bold;
+    }
+  }
+
+  strong,
+  b {
+    font-family: $font-opensans-bold;
+  }
+}

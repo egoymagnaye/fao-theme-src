@@ -1,77 +1,139 @@
-.em-footer{
-  &--container{
-    background-color: #072D34 !important;
+.em-footer {
+  &--container {
+    background-color: #072d34 !important;
     padding: 2rem 0 0 0;
-    h5, p {
-      color: #ffffff !important;
-    } 
+    h5,
+    p,
+    a {
+      color: $color-white;
+      transition: color 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: $color-light-orange;
+    }
   }
 
   &--inner,
-  &--terms{
+  &--terms {
     width: 100%;
     max-width: 1400px !important;
     margin: 0 auto !important;
 
-    @include min-screen(768px){
+    @include min-screen(768px) {
       max-width: 1400px !important;
     }
   }
 
-  &--row{
+  &--row {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2rem .8rem;
+    padding: 0 20px 50px;
 
-    @include min-screen(768px){
+    @include min-screen(768px) {
       flex-direction: row;
     }
   }
 
-  &--signup form{
+  &--social-media {
+    list-style-type: none;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 
-    @include min-screen(768px){
-      flex-direction: row;
+    h6 {
+      color: #fff;
+      font-family: "MontserratLight";
+      margin: 0 !important;
     }
 
-    & > input[type=email]{
-      color: #ffffff;
-      background-color: #072D34;
-      border-color: #ffffff;
-      border-radius: 10px;
-      margin-bottom: 10px;
+    li {
+      margin-right: 10px;
+    }
 
-      @include min-screen(768px){
-        margin-right: 10px;
-        margin-bottom: unset;
+    svg {
+      display: block;
+      width: 20px;
+
+      path {
+        fill: #fff;
+        transition: fill 0.2s ease-in-out;
+      }
+
+      &:hover {
+        path {
+          fill: $color-light-orange;
+        }
       }
     }
+  }
 
-    & > [type=submit]{
-      color: #ffffff;
-      background-color: #F58B71;
-      border-radius: 10px;
-      border: none;
+  &--signup {
+    margin-top: 30px;
+
+    @include min-screen(768px) {
+      margin-top: 0;
+    }
+
+    h5 {
+      font-family: $font-alegreya-bold;
+    }
+
+    .mc4wp-form-fields {
+      display: flex;
+      flex-wrap: wrap;
+
+      & > div {
+        margin-right: 10px;
+      }
+
+      & input[type="email"] {
+        color: #ffffff;
+        background-color: #072d34;
+        border-color: #ffffff;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      & [type="submit"] {
+        color: #ffffff;
+        background-color: #f58b71;
+        border-radius: 10px;
+        border: none;
+        text-transform: uppercase;
+        font-family: $font-opensans-bold;
+      }
     }
   }
 
-  &--row2{
+  &--terms {
+    p {
+      margin: 0 0 15px;
+      font-size: 14px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      @include min-screen(768px) {
+        margin: 0;
+      }
+    }
+  }
+
+  &--row2 {
     border-top: 1px solid #ffffff;
 
-    & > div{
+    & > div {
       display: flex;
       flex-direction: column;
-      padding: 2rem .8rem;
+      padding: 2rem 20px;
 
-      @include min-screen(768px){
+      @include min-screen(768px) {
         flex-direction: row;
         justify-content: space-between;
       }
     }
   }
 }
-
-

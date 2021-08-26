@@ -5,7 +5,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   entry: {
-    ["sample"]: ["./src/js/sample.js", "./src/sass/style.scss"],
+    ["em-globals"]: ["./src/js/globals.js", "./src/sass/style.scss"],
   },
   output: {
     path: path.resolve(
