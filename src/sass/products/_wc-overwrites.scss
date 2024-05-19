@@ -1,0 +1,14 @@
+.woocommerce-message .button,
+.wc-proceed-to-checkout .checkout-button.button,
+.woocommerce-checkout .button.alt#place_order,
+.woocommerce-account .woocommerce-button,
+.woocommerce-account .woocommerce-Button.button {
+  background-color: #f68b71 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
+a.added_to_cart.wc-forward {
+  margin-left: 10px;
+}

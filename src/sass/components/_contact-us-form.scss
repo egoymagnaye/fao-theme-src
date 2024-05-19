@@ -1,0 +1,39 @@
+/* .contact-us-section {
+  position: relative;
+} */
+
+.contact-us-form {
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  background-color: #14606e;
+  padding: 40px 25px;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+
+  input,
+  textarea {
+    border-radius: 10px;
+    font-family: "Montserrat", Sans-serif;
+  }
+
+  [type="submit"] {
+    font-weight: bold;
+    color: #fff;
+    background-color: #f58b71 !important;
+    border-radius: 14px;
+    border: none;
+    padding: 15px 50px;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}

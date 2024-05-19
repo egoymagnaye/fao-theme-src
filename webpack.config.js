@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(
-      "../fao-local/wp-content/themes/fao-theme-hello/assets/",
+      "../fao-local-2/wp-content/themes/fao-theme-hello/assets/",
       "js"
     ), //__dirname
     filename: "[name].js",

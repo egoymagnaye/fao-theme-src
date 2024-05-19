@@ -5,23 +5,27 @@
     h5,
     p,
     a {
-      color: $color-white;
+      color: $color-white !important;
       transition: color 0.2s ease-in-out;
+      font-family: $font-opensans-light;
     }
 
     a:hover {
-      color: $color-light-orange;
+      color: $color-light-orange !important;
+    }
+
+    h5 {
+      font-family: $font-alegreya-bold;
     }
   }
 
   &--inner,
   &--terms {
     width: 100%;
-    max-width: 1400px !important;
     margin: 0 auto !important;
 
     @include min-screen(768px) {
-      max-width: 1400px !important;
+      max-width: 1200px !important;
     }
   }
 
@@ -97,12 +101,17 @@
       }
 
       & [type="submit"] {
-        color: #ffffff;
-        background-color: #f58b71;
+        color: #fff !important;
+        background-color: #f58b71 !important;
         border-radius: 10px;
         border: none;
         text-transform: uppercase;
         font-family: $font-opensans-bold;
+
+        &:hover {
+          color: #fff !important;
+          background-color: #f58b71 !important;
+        }
       }
     }
   }

@@ -8,41 +8,39 @@ import $ from "jquery";
  *
  */
 const dropDownTL = gsap.timeline({ defaults: { ease: "power1.out" } });
-Array.from(document.getElementById("menu-primary-menu").children).map(
-  (item) => {
-    HoverIntent(
-      item,
-      () => {
-        if (Array.from(item.children)[1]) {
-          dropDownTL
-            .to(Array.from(item.children)[1], {
-              css: { display: "block" },
-              duration: 0.1,
-            })
-            .to(Array.from(item.children)[1], {
-              opacity: 1,
-              y: 6,
-              duration: 0.2,
-            });
-        }
-      },
-      () => {
-        if (Array.from(item.children)[1]) {
-          dropDownTL
-            .to(Array.from(item.children)[1], {
-              opacity: 0,
-              y: -6,
-              duration: 0.1,
-            })
-            .to(Array.from(item.children)[1], {
-              css: { display: "none" },
-              duration: 0.2,
-            });
-        }
+Array.from(document.getElementById("menu-header-menu").children).map((item) => {
+  HoverIntent(
+    item,
+    () => {
+      if (Array.from(item.children)[1]) {
+        dropDownTL
+          .to(Array.from(item.children)[1], {
+            css: { display: "block" },
+            duration: 0.1,
+          })
+          .to(Array.from(item.children)[1], {
+            opacity: 1,
+            y: 6,
+            duration: 0.2,
+          });
       }
-    ).options({ timeout: 100, interval: 50 });
-  }
-);
+    },
+    () => {
+      if (Array.from(item.children)[1]) {
+        dropDownTL
+          .to(Array.from(item.children)[1], {
+            opacity: 0,
+            y: -6,
+            duration: 0.1,
+          })
+          .to(Array.from(item.children)[1], {
+            css: { display: "none" },
+            duration: 0.2,
+          });
+      }
+    }
+  ).options({ timeout: 100, interval: 50 });
+});
 
 /**
  * Mobile navigation
@@ -65,7 +63,7 @@ $(document).on("click", ".hamburger", function () {
         },
       })
       .to(
-        ".em-mobile-nav--container .menu-primary-menu-container ul.menu > li",
+        ".em-mobile-nav--container .menu-header-menu-container ul.menu > li",
         {
           opacity: 0,
           top: "-10px",
@@ -116,7 +114,7 @@ $(document).on("click", ".hamburger", function () {
       /* "-=0.1" */
     )
     .to(
-      ".em-mobile-nav--container .menu-primary-menu-container ul.menu > li",
+      ".em-mobile-nav--container .menu-header-menu-container ul.menu > li",
       {
         opacity: 1,
         top: 0,

@@ -1,0 +1,21 @@
+.single-product #reply-title,
+.single-product .comment-text .meta {
+  font-family: "Alegreya", Sans-serif;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin: 0 0 10px !important;
+  display: block !important;
+  color: #12606e !important;
+}
+
+.single-product .comment-text .meta strong {
+  font-weight: bold !important;
+}
+
+.single-product .form-submit #submit {
+  background-color: #f68b71 !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  border-radius: 15px !important;
+  padding: 15px 30px !important;
+}

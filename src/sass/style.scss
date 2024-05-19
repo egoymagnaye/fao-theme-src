@@ -8,9 +8,20 @@
 @import "lib/hamburgers.min";
 @import "lib/swiper";
 @import "lib/locomotive-scroll";
+
+@import "components/contact-us-form";
 /* END: Component */
 
 /* Global */
 @import "globals/header";
 @import "globals/footer";
 /* END: Global */
+
+/* Products */
+@import "./products/wc-overwrites";
+@import "products/single-product";
+/* END: Products */
+
+/* Blog */
+@import "./blog/single-blog";
+/* END: Blog */
